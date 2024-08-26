@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Decodificador</title>
+    <link rel="shortcut icon" href="./assets/FaviconAlura.png" type="image/x-icon">
+</head>
+
+<body>
+    <header id="header">
+        <img id="logo" src="./assets/logo.svg" alt="a letra a em forma de logotipo." />
+    </header>
+    <main id="container">
+
+        <section id="containerInput">
+            <textarea id="containerInput_text" name="" placeholder="Digite seu texto"></textarea>
+            <div id="containerInput_control">
+                <div id="containerInput_controlAdvice">
+                    <img src="./assets/exclamation-circle.svg"
+                        alt="exclamação dentro de circulo cinza para chamar atenção." />
+                    <p id="containerInput_controlAdvice_text">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div id="containerInput_controlButtons">
+                    <button onclick="criptografar()"
+                        id="containerInput_controlButton_criptografar">Criptografar</button>
+                    <button onclick="descriptografar()"
+                        id="containerInput_controlButton_descriptografar">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section id="containerOutput">
+            <div id="containerOutput_control">
+                <p id="containerOutput_controlResult" class="hidden"></p>
+                <div id="containerOutput_empty" class="">
+                    <img src="./assets/image.svg" id="containerOutput_emptyImage" class=""
+                        alt="imagem de uma pessoa de joelhos com uma lupa na mão olhando para um diamante a sua frente." />
+                    <div id="containerOutput_emptyMessage" class="">
+                        <p id="containerOutput_emptyMessage_strong" class="">Nenhuma mensagem encontrada</p>
+                        <p id="containerOutput_emptyMessage_text" class="">Digite um texto que você deseja
+                            criptografar ou descriptografar.</p>
+                    </div>
+                </div>
+                <button onclick="copiar()" id="containerOutput_controlButton_copiar" class="hidden">Copiar</button>
+            </div>
+        </section>
+
+    </main>
+    <script src="./app.js" defer></script>
+</body>
+
+</html>
