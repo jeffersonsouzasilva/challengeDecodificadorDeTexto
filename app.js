@@ -72,4 +72,3 @@ function copiar() {
     });
 }
 
-console.log("Desenvolvido por Jefferson Souza Silva, seguindo as métricas via figma da alura.")
